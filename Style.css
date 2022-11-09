@@ -1,76 +1,76 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /*================= APP CONTAINER ================*/
-#container{
-    position: relative;
+
+#container {
+  position: relative;
 }
 
 /*================== BACKGROUND IMAGE ===============*/
 
 #hero-image > img {
-    position: relative;
-    max-width: 100%;
-    filter: brightness(50%);
-    z-index: -1;
+  position: relative;
+  max-width: 100%;
+  filter: brightness(50%);
+  z-index: -1;
 }
 
 #go-back-arrow {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    top: 1rem;
-    left: 1rem;
-    background-color: white;
-    z-index: 9;
-    border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 1rem;
+  left: 1rem;
+  background-color: white;
+  z-index: 9;
+  border-radius: 50%;
 }
 
 #go-back-arrow > img {
-    width: 2.5rem;
+  width: 2.5rem;
 }
 
 /*================= MODAL CONTAINER ================*/
 
-#modal{
-    margin-top:-21%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    border-radius: 15px 15px 0 0;
-    z-index: 9;
+#modal {
+  margin-top: -21%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  border-radius: 15px 15px 0 0;
+  z-index: 9;
 }
 
 /*================= MODAL - TAKEOUT BANNER ================*/
 
 #takeout-banner {
-    display: flex;
-    justify-content: center;
-    border-radius: 15px 15px 0 0;
-    padding-top: 2vh;
-    height: 6vh;
-    background-color: rgb(74, 230, 204);
-    color: white;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px 15px 0 0;
+  padding-top: 2vh;
+  height: 6vh;
+  background-color: rgb(74, 230, 204);
+  color: white;
+  position: relative;
 }
 
 /*================= MODAL MAIN ================*/
 
-#main-modal{
-    color: rgb(82, 81, 81);
-    border-radius: 15px 15px 0 0;
-    margin: auto ;
-    position: relative;
-    top: -19px;
-    background-color: white;
+#main-modal {
+  color: rgb(82, 81, 81);
+  border-radius: 15px 15px 0 0;
+  margin: auto;
+  position: relative;
+  top: -19px;
+  background-color: white;
 }
-
 
 /*================= MODAL ADDRESS /  ================*/
 
-#text-address{
-    padding-top: 4vh;
+#text-address {
+  padding-top: 4vh;
 }
 
 /*================= MODAL DEAL DETAILS ================*/
@@ -78,73 +78,99 @@ body {
 /* DISCOUNT DETAILS */
 
 #text-discount-details {
-    color: rgb(74, 230, 204);
-    font-weight: 600;
+  color: rgb(74, 230, 204);
+  font-weight: 600;
 }
 
-p#larger{
-    font-size: x-large;
-    font-weight: 600;
-    margin-bottom:0 ;
+p#larger {
+  font-size: x-large;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
-p#smaller{
-    margin-top:0 ;
-    font-size: large;
-    font-weight: 600;
+p#smaller {
+  margin-top: 0;
+  font-size: large;
+  font-weight: 600;
 }
 
 /* LOCATION INFO */
 
-#location-details{
-    padding-bottom: 3vh;
-    font-size:medium;
+#location-details {
+  padding-bottom: 3vh;
+  font-size: medium;
 }
 
-#location-details >p  {
-    margin: 1%;
+#location-details > p {
+  margin: 1%;
 }
 
 /* TAKEOUT INFO */
 
-span{
-    font-weight: bolder;
-    color: black;
+span {
+  font-weight: bolder;
+  color: black;
 }
 
 /*================= MODAL BUTTON  ================*/
 
-#button-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: thin solid lightgray;
-    width: 70vw;
-    margin:auto;
-    padding-bottom: 5%;
+#button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: thin solid lightgray;
+  width: 70vw;
+  margin: auto;
+  padding-bottom: 5%;
 }
 
-button{
-    background-color: rgb(74, 230, 204);
-    color: white;
-    border: none;
-    width: 70vw;
-    height: 3vh;
-    border-radius: 3rem;
-    font-weight: bolder;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+button {
+  background-color: rgb(74, 230, 204);
+  color: white;
+  border: none;
+  width: 70vw;
+  height: 3vh;
+  border-radius: 3rem;
+  font-weight: bolder;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 /*================= MODAL DISCLAIMER ================*/
 
-#disclaimer{
-    max-width: 55vw;
-    margin: auto;
-    text-align: left;
-    color: lightslategray;
-    font-size: small;
+#disclaimer {
+  max-width: 55vw;
+  margin: auto;
+  text-align: left;
+  color: lightslategray;
+  font-size: small;
 }
 
 li {
-    padding-top: 2%;
+  padding-top: 2%;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: black;
+    min-height: 80vh;
+  }
+  #container {
+    margin: 0 auto;
+    position: relative;
+    max-width: 35vw;
+    min-height: 90vh;
+  }
+  #modal {
+    min-height: 70vh;
+  }
+  #takeout-banner {
+    padding-top: 1vh;
+    height: 4vh;
+  }
+  #button-container {
+    width: 25vw;
+  }
+  #disclaimer {
+    max-width: 15vw;
+  }
 }
